@@ -1,0 +1,26 @@
+{
+  "name": "eva-color-trans",
+  "version": "0.0.1",
+  "description": "Another Color Value Transformer",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --hot --inline",
+    "build": "webpack --progress --profile --colors --config webpack.production.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Phantr4x/EvaColorTrans.git"
+  },
+  "author": "Phantr4x",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Phantr4x/EvaColorTrans/issues"
+  },
+  "homepage": "https://github.com/Phantr4x/EvaColorTrans#readme",
+  "devDependencies": {
+    "css-loader": "^0.23.1",
+    "style-loader": "^0.13.0",
+    "webpack": "^1.12.12",
+    "webpack-dev-server": "^1.14.1"
+  }
+}

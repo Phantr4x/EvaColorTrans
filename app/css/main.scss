@@ -1,0 +1,78 @@
+@import './_reset.scss';
+@import './_csshack.scss';
+@import './_variables/_variable.scss';
+@import './_mixins/_mixin.scss';
+@import './_fonts/_font.scss';
+@import './_animations/_animation.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  box-sizing: border-box;
+}
+
+body, input {
+  font: 300 18px/1.2 'Gotham SSm A', 'Gotham SSm B', sans-serif;
+  background: $bg-color;
+}
+
+#wrapper {
+  width: 360px;
+  height: 125px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -62.5px -180px;
+}
+
+input {
+  display: block;
+  width: 360px;
+  font-size: 28px;
+  line-height: 44px;
+  background: 0 0;
+  border: none;
+  border-bottom: 1px solid rgba(0,0,0,.2);
+  padding: 5px 0;
+  border-radius: 0;
+  outline: none;
+  &:focus {
+    border-bottom-color: $input-text-color;
+  }
+}
+
+#hex {
+  margin-bottom: 15px;
+}
+
+.dark input {
+  color: #FFF!important;
+  border-bottom-color: rgba(255,255,255,.4);
+  &:focus {
+    border-bottom-color: #FFF;
+  }
+}
+
+.light input {
+  color: #222!important;
+  border-bottom-color: rgba(0,0,0,.2);
+  &:focus {
+    border-bottom-color: #222;
+  }
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+  color: $placeholder-color;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: $placeholder-color
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: $placeholder-color;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+  color: $placeholder-color;
+}
